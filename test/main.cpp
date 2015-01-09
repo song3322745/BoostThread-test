@@ -35,7 +35,7 @@ void printing(atom_int& x, const string& str)
 }
 int main()
 {
-    cout << "test thread" << endl;
+    cout << "first test thread" << endl;
     cout << "thread max num:" << thread::hardware_concurrency() << endl;
     atom_int x;
     thread t1(printing, ref(x), "boost");
