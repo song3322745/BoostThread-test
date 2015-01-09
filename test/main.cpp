@@ -27,7 +27,7 @@ typedef basic_atom<int> atom_int;
 mutex io_mu;
 void printing(atom_int& x, const string& str)
 {
-    for(int i=0; i<5; ++i)
+    for(int i=0; i<100000; ++i)
     {
         mutex::scoped_lock lock(io_mu);
         cout << str << ++x << endl;
